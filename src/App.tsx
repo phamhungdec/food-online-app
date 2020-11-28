@@ -10,6 +10,9 @@ import { useGlobalContext } from 'context/GlobalContext';
 // layouts
 import Dashboard from 'layouts/Dashboard';
 
+// containers
+import Spinner from 'containers/Spinner';
+
 // themes
 import themes from 'themes';
 import { THEMES } from 'configs';
@@ -27,9 +30,10 @@ function App() {
   return (
     <MuiThemeProvider theme={themes(type)}>
       <div className="App">
-        <h4>demo</h4>
+        dsa 
         <Dashboard />
       </div>
+      <Spinner />
     </MuiThemeProvider>
   );
 }
